@@ -299,7 +299,7 @@ if __name__ == '__main__':
                     .otherwise(None)
                     )
     log_dataframe("The average number of likes per post for each user:", average_likes_per_post_per_user)
-    write_df_to_csv(average_likes_per_post_per_user, "average_posts_per_post_per_user")
+    write_df_to_csv(average_likes_per_post_per_user, "average_likes_per_post_per_user")
 
     # Calculate how many users haven't written any posts
     inactive_users = df.groupBy("userId") \
