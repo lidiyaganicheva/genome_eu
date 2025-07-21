@@ -1,0 +1,10 @@
+services:
+  pyspark:
+    build: .
+    container_name: genome
+    volumes:
+      - ./:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - GRANT_SUDO=yes
+    tty: true

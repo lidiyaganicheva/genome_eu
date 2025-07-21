@@ -1,0 +1,5 @@
+requests
+pyspark==3.5.0
+dotenv
+tenacity
+findspark

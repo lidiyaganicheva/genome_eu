@@ -1,0 +1,268 @@
+2025-07-21 16:33:44,834 - WARNING - Starting call to '__main__.create_user', this is the 1st time calling it.
+2025-07-21 16:33:45,113 - INFO - The user lidiya with first_name lidiya and last_name hanicheva is successfully created
+2025-07-21 16:33:45,114 - WARNING - Starting call to '__main__.authorize', this is the 1st time calling it.
+2025-07-21 16:33:45,338 - WARNING - Starting call to '__main__.get_total_count', this is the 1st time calling it.
+2025-07-21 16:33:45,576 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:33:45,579 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:33:45,591 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:33:45,592 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:33:45,593 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:33:48,314 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:33:48,315 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:33:48,728 - INFO - Closing down clientserver connection
+2025-07-21 16:33:48,728 - INFO - Closing down clientserver connection
+2025-07-21 16:33:48,728 - INFO - Closing down clientserver connection
+2025-07-21 16:33:48,729 - INFO - Closing down clientserver connection
+2025-07-21 16:33:48,729 - INFO - Closing down clientserver connection
+2025-07-21 16:33:53,793 - INFO - Users dataset is saved do dataframe
++------+---------+---------+------------+--------------+
+|userId|firstName| lastName|        city|         state|
++------+---------+---------+------------+--------------+
+|    61|    Mason|  Pearson|     Phoenix|         Idaho|
+|    62|     Leah|Henderson|      Austin|       Wyoming|
+|    63|    Logan|   Lawson|     Chicago|     Minnesota|
+|    64|    Avery|   Barnes|Philadelphia|   Connecticut|
+|    65|    Caleb|  Perkins| Los Angeles|South Carolina|
++------+---------+---------+------------+--------------+
+only showing top 5 rows
+
+
+
+2025-07-21 16:34:01,656 - WARNING - Starting call to '__main__.get_total_count', this is the 1st time calling it.
+2025-07-21 16:34:01,909 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:01,915 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:01,917 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:01,927 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:01,928 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:02,219 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:02,224 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:02,231 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:02,239 - WARNING - Starting call to '__main__.get_json_data', this is the 1st time calling it.
+2025-07-21 16:34:02,499 - INFO - Closing down clientserver connection
+2025-07-21 16:34:02,499 - INFO - Closing down clientserver connection
+2025-07-21 16:34:02,500 - INFO - Closing down clientserver connection
+2025-07-21 16:34:02,500 - INFO - Closing down clientserver connection
+2025-07-21 16:34:02,500 - INFO - Closing down clientserver connection
+2025-07-21 16:34:03,378 - INFO - Posts dataset is saved do dataframe:
++------+------+-----+-----+--------+
+|postId|userId|views|likes|dislikes|
++------+------+-----+-----+--------+
+|   121|     7| 4114|  159|       4|
+|   122|    31| 3140|  853|      47|
+|   123|     5| 1583| 1350|      12|
+|   124|   150|  974|  893|      45|
+|   125|   152| 4240| 1392|      13|
++------+------+-----+-----+--------+
+only showing top 5 rows
+
+
+
+2025-07-21 16:34:26,792 - INFO - Users and posts datasets are joined:
++------+---------+---------+-----------+--------------+------+-----+-----+--------+
+|userId|firstName| lastName|       city|         state|postId|views|likes|dislikes|
++------+---------+---------+-----------+--------------+------+-----+-----+--------+
+|    61|    Mason|  Pearson|    Phoenix|         Idaho|   221|  865|  159|       7|
+|    61|    Mason|  Pearson|    Phoenix|         Idaho|   208| 3943|  438|      10|
+|    63|    Logan|   Lawson|    Chicago|     Minnesota|   128| 2379|   39|       4|
+|    62|     Leah|Henderson|     Austin|       Wyoming|   117| 3859|  120|       3|
+|    65|    Caleb|  Perkins|Los Angeles|South Carolina|   164| 2002|  400|      14|
++------+---------+---------+-----------+--------------+------+-----+-----+--------+
+only showing top 5 rows
+
+
+
+2025-07-21 16:34:43,614 - INFO - Top 10 posts with the highest like counts:
++------+------+-----+-----+--------+
+|postId|userId|views|likes|dislikes|
++------+------+-----+-----+--------+
+|   175|   128| 4102| 1489|      48|
+|    44|   124| 2764| 1469|      28|
+|   235|    88| 3074| 1457|      15|
+|   131|    30| 2810| 1455|      43|
+|   138|   126| 4655| 1454|      10|
+|     3|    16| 4152| 1448|      39|
+|   136|   106| 1511| 1424|      31|
+|   125|   152| 4240| 1392|      13|
+|   207|   157| 2741| 1391|      29|
+|    27|    95| 3218| 1387|      35|
++------+------+-----+-----+--------+
+
+
+
+2025-07-21 16:35:00,796 - INFO - Top 10 users with the highest total number of likes:
++------+-----------+
+|userId|total_likes|
++------+-----------+
+|   126|       4466|
+|   150|       3358|
+|     6|       2679|
+|   175|       2535|
+|    51|       2483|
+|     5|       2477|
+|   124|       2360|
+|   108|       2303|
+|    45|       2299|
+|   183|       2291|
++------+-----------+
+
+
+
+2025-07-21 16:35:20,519 - INFO - How many posts each user has created
++------+-----------+
+|userId|total_posts|
++------+-----------+
+|     1|          1|
+|     2|          2|
+|     3|          0|
+|     4|          0|
+|     5|          2|
++------+-----------+
+only showing top 5 rows
+
+
+
+2025-07-21 16:35:40,511 - INFO - The average number of likes per post for each user:
++------+-----------+-----------+----------------------+
+|userId|total_likes|total_posts|average_likes_per_user|
++------+-----------+-----------+----------------------+
+|    61|        597|        429|    1.3916083916083917|
+|    63|         39|        128|             0.3046875|
+|    62|        120|        117|    1.0256410256410255|
+|    65|        400|        164|    2.4390243902439024|
+|    64|       NULL|       NULL|                  NULL|
++------+-----------+-----------+----------------------+
+only showing top 5 rows
+
+
+
+2025-07-21 16:36:01,840 - INFO - How many users haven't written any posts
++--------------------+
+|total_inactive_users|
++--------------------+
+|                  53|
++--------------------+
+
+
+
+2025-07-21 16:36:21,641 - INFO - What are the top 3 cities where users live that received the highest total number of likes from their posts?
++------+----------+-----------+---------+
+|userId|      city|total_likes|city_rank|
++------+----------+-----------+---------+
+|   126|  New York|       4466|        1|
+|   150| San Diego|       3358|        1|
+|     6|Fort Worth|       2679|        1|
++------+----------+-----------+---------+
+
+
+
+2025-07-21 16:36:31,998 - INFO - Anomalies in likes per user
+2025-07-21 16:36:39,980 - INFO - Anomalies: Posts where number of likes is higher than the number of views
++------+------+-----+-----+
+|userId|postId|likes|views|
++------+------+-----+-----+
++------+------+-----+-----+
+
+
+
+2025-07-21 16:36:59,685 - INFO - Anomalies: Posts where number of reactions (likes + dislikes) is higher than the number of views
++------+------+-----+--------+-----+
+|userId|postId|likes|dislikes|views|
++------+------+-----+--------+-----+
+|     2|   183|  795|      11|  798|
+|    34|   141|   51|      39|   66|
+|   113|    95|    8|       4|    8|
+|   124|    24|   87|      12|   97|
+|   201|   178|  174|      30|  197|
++------+------+-----+--------+-----+
+
+
+
+2025-07-21 16:37:09,546 - INFO - Starting calculating IQR for total_likes
+2025-07-21 16:37:29,645 - INFO - Anomalies: Outliers in likes per user. IQR
++------+-----------+-----------+-----------+
+|userId|total_likes|upper_bound|lower_bound|
++------+-----------+-----------+-----------+
+|     6|       2679|     2597.5|     -774.5|
+|   126|       4466|     2597.5|     -774.5|
+|   150|       3358|     2597.5|     -774.5|
++------+-----------+-----------+-----------+
+
+
+
+2025-07-21 16:37:39,881 - INFO - Starting calculating z-scores for total_likes
+2025-07-21 16:38:01,530 - INFO - Anomalies: Outliers in likes per user. Z-score
++------+-----------+-----------------+-----------------+-------------------+------------------+
+|userId|total_likes|             mean|           stddev|total_likes_z_score|       abs_z_score|
++------+-----------+-----------------+-----------------+-------------------+------------------+
+|   126|       4466|997.5419354838709|722.6931794832121| 4.7993507659728785|4.7993507659728785|
+|   150|       3358|997.5419354838709|722.6931794832121| 3.2661966814244185|3.2661966814244185|
++------+-----------+-----------------+-----------------+-------------------+------------------+
+
+
+
+2025-07-21 16:38:10,095 - INFO - Starting calculating IQR for likes
+2025-07-21 16:38:27,217 - INFO - Anomalies: Outliers in likes per post. IQR
++------+------+-----+-----------+-----------+
+|userId|postId|likes|upper_bound|lower_bound|
++------+------+-----+-----------+-----------+
++------+------+-----+-----------+-----------+
+
+
+
+2025-07-21 16:38:36,446 - INFO - Starting calculating z-scores for likes
+2025-07-21 16:38:54,516 - INFO - Anomalies: Outliers in likes per post. Z-score
++------+------+-----+----+------+-------------+-----------+
+|userId|postId|likes|mean|stddev|likes_z_score|abs_z_score|
++------+------+-----+----+------+-------------+-----------+
++------+------+-----+----+------+-------------+-----------+
+
+
+
+2025-07-21 16:39:07,660 - INFO - Starting calculating IQR for likes_per_view
+2025-07-21 16:39:20,137 - INFO - Anomalies: Outliers in likes per view. IQR
++------+------+-----+-----+--------------+-----------+-----------+
+|userId|postId|likes|views|likes_per_view|upper_bound|lower_bound|
++------+------+-----+-----+--------------+-----------+-----------+
++------+------+-----+-----+--------------+-----------+-----------+
+
+
+
+2025-07-21 16:39:32,648 - INFO - Starting calculating z-scores for likes_per_view
+2025-07-21 16:39:55,038 - INFO - Anomalies: Outliers in likes per view. Z-score
++------+------+-----+-----+--------------+----+------+----------------------+-----------+
+|userId|postId|likes|views|likes_per_view|mean|stddev|likes_per_view_z_score|abs_z_score|
++------+------+-----+-----+--------------+----+------+----------------------+-----------+
++------+------+-----+-----+--------------+----+------+----------------------+-----------+
+
+
+
+2025-07-21 16:39:55,099 - INFO - Starting calculating IQR for likes_per_reaction
+2025-07-21 16:40:06,480 - INFO - Anomalies: Outliers in likes per reaction. IQR
++------+-----+--------+------------------+------------------+------------------+
+|postId|likes|dislikes|likes_per_reaction|       upper_bound|       lower_bound|
++------+-----+--------+------------------+------------------+------------------+
+|   204|   20|      14|0.5882352941176471|1.1062392795883362|0.7726200686106346|
+|    17|   50|      31|0.6172839506172839|1.1062392795883362|0.7726200686106346|
+|   143|  118|      41|0.7421383647798742|1.1062392795883362|0.7726200686106346|
+|   141|   51|      39|0.5666666666666667|1.1062392795883362|0.7726200686106346|
+|   171|   67|      28|0.7052631578947368|1.1062392795883362|0.7726200686106346|
++------+-----+--------+------------------+------------------+------------------+
+only showing top 5 rows
+
+
+
+2025-07-21 16:40:18,671 - INFO - Starting calculating z-scores for likes_per_reaction
+2025-07-21 16:40:29,412 - INFO - Anomalies: Outliers in likes per reaction. Z-score
++------+-----+--------+------------------+------------------+-------------------+--------------------------+------------------+
+|postId|likes|dislikes|likes_per_reaction|              mean|             stddev|likes_per_reaction_z_score|       abs_z_score|
++------+-----+--------+------------------+------------------+-------------------+--------------------------+------------------+
+|   204|   20|      14|0.5882352941176471|0.9186396099194966|0.10291297248711957|       -3.2105215486143144|3.2105215486143144|
+|   141|   51|      39|0.5666666666666667|0.9186396099194966|0.10291297248711957|        -3.420102779529396| 3.420102779529396|
+|   214|    7|       5|0.5833333333333334|0.9186396099194966|0.10291297248711957|         -3.25815364654956|  3.25815364654956|
+|    33|   40|      35|0.5333333333333333|0.9186396099194966|0.10291297248711957|       -3.7440010454890666|3.7440010454890666|
+|    29|    1|       1|               0.5|0.9186396099194966|0.10291297248711957|        -4.067899311448738| 4.067899311448738|
++------+-----+--------+------------------+------------------+-------------------+--------------------------+------------------+
+only showing top 5 rows
+
+
+
